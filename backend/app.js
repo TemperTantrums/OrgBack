@@ -4,7 +4,9 @@ const cors = require("cors");
 const morgan = require("morgan");
 const dotenv = require("dotenv");
 const helmet = require("helmet");
+
 const companyRoutes = require("./routes/companyRoutes");
+const biometricRoutes = require("./routes/biometricRoutes");
 
 dotenv.config();
 
@@ -18,5 +20,6 @@ app.use(helmet());
 
 // Routes
 app.use("/api/companies", companyRoutes);
+app.use("/api/biometric", biometricRoutes);
 
 module.exports = app;
