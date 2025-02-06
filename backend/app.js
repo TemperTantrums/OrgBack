@@ -16,7 +16,7 @@ const app = express();
 // CORS Configuration
 const allowedOrigins = [
   "http://localhost:4200", // Allow during development
-  "https://orgback.onrender.com", // Replace with your deployed Angular frontend URL
+  "https://orgfront.onrender.com", // Replace with your deployed Angular frontend URL
 ];
 
 app.use(
